@@ -1,0 +1,50 @@
+.sidebar
+	flex-shrink: 0
+	width: 100%
+
+	color: $sidebar-color
+	fill: $sidebar-color
+
+	background-color: $sidebar-bg
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.12)
+
+	.icon_menu
+		display: none
+
+	&__nav
+		&-list
+			display: flex
+
+		&-item
+			display: flex
+			width: 100%
+			padding: .95em 1.625em
+
+			color: inherit
+			font-size: 0.875em
+			font-weight: 500
+			text-decoration: none
+			white-space: nowrap
+
+			.icon
+				display: none
+				flex-shrink: 0
+				width: 1.6em
+				height: 1.6em
+				margin-right: 1.3em
+
+				fill: inherit
+
+			&_current
+				position: relative
+
+				&::before
+					content: ''
+
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0
+
+					height: 2px
+					background-color: #e2715c

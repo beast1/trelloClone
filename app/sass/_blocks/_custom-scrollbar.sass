@@ -1,0 +1,30 @@
+.custom-scrollbar
+	-webkit-overflow-scrolling: inherit
+	transform: translate3d(0,0,0)
+
+	&_x
+		overflow-x: auto
+		overflow-y: hidden
+
+	&_y
+		overflow-x: hidden
+		overflow-y: auto
+
+	&::-webkit-scrollbar
+		height: 9px
+		width: 9px
+
+	&::-webkit-scrollbar-button:end:increment,
+	&::-webkit-scrollbar-button:start:decrement
+		background: 0 0
+		display: none
+
+	&::-webkit-scrollbar-track-piece
+		background: #D6DADC
+
+	&::-webkit-scrollbar-thumb:horizontal,
+	&::-webkit-scrollbar-thumb:vertical
+		background: #C4C9CC
+		border-radius: 5px
+		display: block
+		height: 50px

@@ -1,0 +1,149 @@
+.page-header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	display: flex
+	width: 100%
+	height: 3.25em
+
+	fill: $page-header-color
+
+	background-color: $page-header-bg
+
+	&__section
+		padding-top: .75em
+		padding-bottom: .75em
+
+	&__component
+		&:not(:first-child)
+			margin-left: .5em
+
+
+	&__sidebar-toggle
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-shrink: 0
+		max-width: 8.625em
+		width: 100%
+		height: 100%
+		padding-left: 1.625em
+		padding-right: 1.625em
+
+		color: $page-header__sidebar-toggle-color
+		fill: $page-header__sidebar-toggle-color
+		font-weight: 500
+
+		background-color: transparent
+		cursor: pointer
+
+		&-text
+			order: 1
+
+		.icon
+			width: 1.6em
+			height: 1.6em
+
+			fill: inherit
+
+			&_menu
+				display: none
+
+	&__controls
+		display: flex
+		justify-content: flex-end
+		width: 100%
+		padding-left: 2em
+		padding-right: 2em
+
+	&__search
+		position: relative
+
+		max-width: 20em
+		width: 100%
+		height: auto
+		padding: 0
+		border: none
+
+
+		background-color: transparent
+		border-radius: 2px
+
+		.icon
+			position: absolute
+			top: 1px
+			bottom: 1px
+			right: 1px
+
+			box-sizing: content-box
+			width: 1.5em
+			height: 1.5em
+			padding: 0
+			margin: auto 0
+
+			fill: inherit
+			background-color: transparent
+			cursor: pointer
+
+		&-input
+			display: none
+			width: 100%
+			height: 100%
+			padding: .4rem 1rem
+			border: none
+
+			color: #919cb1
+			font-size: .875em
+			font-weight: 500
+
+			background-color: transparent
+
+	&__notify
+		position: relative
+
+		display: flex
+		align-items: center
+
+		.icon
+			width: 1.5em
+			height: 1.5em
+
+			fill: inherit
+			cursor: pointer
+
+		&-count
+			position: absolute
+			top: .8em
+			right: 0
+
+			width: 1.2em
+			height: 1.2em
+			padding: .1em
+
+			color: $white
+			font-size: .6em
+			line-height: 1em
+			text-align: center
+
+			background-color: #e2715c
+			border-radius: 2px
+
+	&__profile
+		display: none
+		align-items: center
+
+		cursor: pointer
+
+		&-avatar
+			width: 2em
+			height: 2em
+
+			background-color: $black
+			border-radius: 50%
+			cursor: pointer
+
+		.icon
+			width: 1.6em
+			height: 1.6em
+			margin-left: .3em

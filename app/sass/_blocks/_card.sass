@@ -1,0 +1,175 @@
+.card
+	display: flex
+	flex-direction: column
+	width: 16.375em
+	//height: 167px
+
+	color: $card-color
+	fill: $card-color
+
+	&__section
+		padding: 1em
+
+		background: $card-bg
+
+		&:not(:last-child)
+			margin-bottom: 0.125em
+
+	&__component
+		&:not(:last-child)
+			margin-bottom: .75em
+
+	&__labels
+		&-list
+			display: flex
+
+		&-item
+			width: 2.5em
+			height: .25em
+
+			&:not(:last-of-type)
+				margin-right: .6em
+
+			&_color
+				&_red
+					background-color: red
+
+				&_yellow
+					background-color: orange
+
+				&_green
+					background-color: green
+
+	&__name
+		margin: 0
+
+		color: inherit
+		font-weight: 400
+		font-size: 1em
+		line-height: 1em
+
+	&__users
+		&-list
+			display: flex
+
+			&[data-usersOffset]
+				&::after
+					content: attr(data-usersOffset)
+
+					box-sizing: border-box
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 2rem
+					height: 1.25rem
+					border: 1px solid $color-success
+					margin-left: 1.375em
+
+					color: $color-success
+					font-size: .875em
+					line-height: 1em
+					font-weight: 500
+
+					border-radius: 10px
+
+		&-item
+			width: 1em
+			height: 1em
+
+			font-size: 1.25em
+
+			background-color: $black
+			border-radius: 50%
+
+			&:first-child:not(:last-child)
+				margin-right: 1.375em
+
+			&:not(:last-child)
+				margin-right: .375em
+
+	&__progress
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&-line
+			width: 11.5em
+			height: .25em
+
+			background-color: #e7e9ee
+
+			&-complete
+				width: 25%
+				height: 100%
+
+				background-color: $color-success
+
+		&-full-icon
+			width: 1.5em
+			height: 1.5em
+
+			fill: $color-success
+
+		&-score
+			color: inherit
+
+			&::before
+				content: attr(data-alredy)
+
+			&::after
+				content: attr(data-total)
+
+	&__check
+		&-list
+		&-item
+			display: flex
+
+			font-size: .875em
+
+			.icon
+				width: 1.6em
+				height: 1.6em
+				margin-right: .4em
+
+				&_checkbox-marked
+					display: none
+
+					fill: $color-success
+
+				&_checkbox-blank-outline
+					fill: lighten($card-color, 36)
+
+		&-input
+			display: none
+
+			&:checked
+				& ~ .icon_checkbox-marked
+					display: block
+
+				& ~ .icon_checkbox-blank-outline
+					display: none
+
+
+	&__scores
+		&-list
+			display: flex
+
+		&-item
+			display: flex
+			align-items: center
+
+			&:not(:last-child)
+				margin-right: 1em
+
+			.icon
+				width: 1em
+				height: 1em
+				margin-right: .2em
+
+			&_comments
+				.icon
+					fill: #5ab8ff
+
+			&_files
+				.icon
+					fill: #ff6060

@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>RS toDo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="modifier_sidebar-slim">
+	<div class="page-header">
+		<div class="page-header__section  page-header__sidebar-toggle">
+			<span class="page-header__sidebar-toggle-text">To Do</span>
+			<svg class="icon  icon_backburger" onclick="App.toggleNav()"><use xlink:href="#icon-backburger" /></svg>
+			<svg class="icon  icon_menu" onclick="App.toggleNav()"><use xlink:href="#icon-menu" /></svg>
+		</div>
+		<div class="page-header__section  page-header__controls">
+			<div class="page-header__component  page-header__search">
+				<input class="page-header__search-input" type="text">
+				<svg class="icon"><use xlink:href="#icon-magnify" /></svg>
+			</div>
+			<div class="page-header__component  page-header__notify">
+				<svg class="icon"><use xlink:href="#icon-bell" /></svg>
+				<span class="page-header__notify-count">2</span>
+			</div>
+			<div class="page-header__component  page-header__profile">
+				<div class="page-header__profile-avatar"></div>
+				<svg class="icon"><use xlink:href="#icon-chevron-down" /></svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<nav class="custom-scrollbar  custom-scrollbar_x  sidebar__nav-list">
+			<a class="sidebar__nav-item" href="#">
+				<svg class="icon"><use xlink:href="#icon-view-dashboard" /></svg>
+				<span class="sidebar__nav-item-text">Проект 1</span>
+			</a>
+			<a class="sidebar__nav-item  sidebar__nav-item_current" href="#">
+				<svg class="icon"><use xlink:href="#icon-account-multiple" /></svg>
+				<span class="sidebar__nav-item-text">Проект 2</span>
+			</a>
+			<a class="sidebar__nav-item" href="#">
+				<svg class="icon"><use xlink:href="#icon-folder" /></svg>
+				<span class="sidebar__nav-item-text">Проект 3</span>
+			</a>
+			<a class="sidebar__nav-item" href="#">
+				<svg class="icon"><use xlink:href="#icon-account" /></svg>
+				<span class="sidebar__nav-item-text">Проект 4</span>
+			</a>
+			<a class="sidebar__nav-item" href="#">
+				<svg class="icon"><use xlink:href="#icon-file-document" /></svg>
+				<span class="sidebar__nav-item-text">Какой-то очень длинный заголовок который проверяет верстку на переполнение. А с ним еще один очень длинный заголовок, который помогает своему товарищу проверять верстку на переполнение.</span>
+			</a>
+		</nav>
+	</div>
+	<main class="custom-scrollbar  space">
+		<section class="bord  space__bord">
+			<header class="bord__component  bord__header">
+				<h2 class="bord__title">Приоритет 1</h2>
+				<div class="bord__controls-list">
+					<div class="bord__controls-item  bord__controls-item_add">
+						<svg class="icon"><use xlink:href="#icon-plus" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Добавить</span>
+					</div>
+					<div class="bord__controls-item  bord__controls-item_menu">
+						<svg class="icon"><use xlink:href="#icon-dots-vertical" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Меню</span>
+					</div>
+				</div>
+			</header>
+			<div class="bord__component  bord__search">
+				<input class="bord__search-input" type="text" required>
+				<div class="bord__search-controls-list">
+					<div class="bord__search-controls-item bord__search-controls-item_submit">
+						<svg class="icon"><use xlink:href="#icon-check" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Искать</span>
+					</div>
+					<div class="bord__search-controls-item  bord__search-controls-item_clean">
+						<svg class="icon"><use xlink:href="#icon-close" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Очистить</span>
+					</div>
+				</div>
+			</div>
+			<div class="custom-scrollbar  custom-scrollbar_y  bord__cards-list">
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Какой-то очень длинный заголовок который проверяет верстку на переполнение. А с ним еще один очень длинный заголовок, который помогает своему товарищу проверять верстку на переполнение.</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete" style="width: 100%"></div>
+								</div>
+								<svg class="icon  card__progress-full-icon"><use xlink:href="#icon-checkbox-marked-circle" /></svg>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="bord  space__bord">
+			<header class="bord__component  bord__header">
+				<h2 class="bord__title">Приоритет 2</h2>
+				<div class="bord__controls-list">
+					<div class="bord__controls-item  bord__controls-item_add">
+						<svg class="icon"><use xlink:href="#icon-plus" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Добавить</span>
+					</div>
+					<div class="bord__controls-item  bord__controls-item_menu">
+						<svg class="icon"><use xlink:href="#icon-dots-vertical" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Меню</span>
+					</div>
+				</div>
+			</header>
+			<div class="bord__component  bord__search">
+				<input class="bord__search-input" type="text" required>
+				<div class="bord__search-controls-list">
+					<div class="bord__search-controls-item bord__search-controls-item_submit">
+						<svg class="icon"><use xlink:href="#icon-check" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Искать</span>
+					</div>
+					<div class="bord__search-controls-item  bord__search-controls-item_clean">
+						<svg class="icon"><use xlink:href="#icon-close" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Очистить</span>
+					</div>
+				</div>
+			</div>
+			<div class="custom-scrollbar  custom-scrollbar_y  bord__cards-list">
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list" data-usersOffset="+25">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete" style="width: 100%"></div>
+								</div>
+								<svg class="icon  card__progress-full-icon"><use xlink:href="#icon-checkbox-marked-circle" /></svg>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="bord  space__bord">
+			<header class="bord__component  bord__header">
+				<h2 class="bord__title">Приоритет 2</h2>
+				<div class="bord__controls-list">
+					<div class="bord__controls-item  bord__controls-item_add">
+						<svg class="icon"><use xlink:href="#icon-plus" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Добавить</span>
+					</div>
+					<div class="bord__controls-item  bord__controls-item_menu">
+						<svg class="icon"><use xlink:href="#icon-dots-vertical" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Меню</span>
+					</div>
+				</div>
+			</header>
+			<div class="bord__component  bord__search">
+				<input class="bord__search-input" type="text" required>
+				<div class="bord__search-controls-list">
+					<div class="bord__search-controls-item bord__search-controls-item_submit">
+						<svg class="icon"><use xlink:href="#icon-check" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Искать</span>
+					</div>
+					<div class="bord__search-controls-item  bord__search-controls-item_clean">
+						<svg class="icon"><use xlink:href="#icon-close" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Очистить</span>
+					</div>
+				</div>
+			</div>
+			<div class="custom-scrollbar  custom-scrollbar_y  bord__cards-list">
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__check-list">
+								<div class="card__check-item">
+									<input class="card__check-input" type="checkbox" name="" checked>
+									<svg class="icon  icon_flex  icon_checkbox-marked"><use xlink:href="#icon-checkbox-marked" /></svg>
+									<svg class="icon  icon_flex  icon_checkbox-blank-outline"><use xlink:href="#icon-checkbox-blank-outline" /></svg>
+									<label class="card__check-label">Какой-то очень длинный заголовок который проверяет верстку на переполнение. А с ним еще один очень длинный заголовок, который помогает своему товарищу проверять верстку на переполнение.</label>
+								</div>
+								<div class="card__check-item">
+									<input class="card__check-input" type="checkbox" name="">
+									<svg class="icon  icon_flex  icon_checkbox-marked"><use xlink:href="#icon-checkbox-marked" /></svg>
+									<svg class="icon  icon_flex  icon_checkbox-blank-outline"><use xlink:href="#icon-checkbox-blank-outline" /></svg>
+									<label class="card__check-label">The setting icon should be...</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="bord  space__bord">
+			<header class="bord__component  bord__header">
+				<h2 class="bord__title">Приоритет 2</h2>
+				<div class="bord__controls-list">
+					<div class="bord__controls-item  bord__controls-item_add">
+						<svg class="icon"><use xlink:href="#icon-plus" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Добавить</span>
+					</div>
+					<div class="bord__controls-item  bord__controls-item_menu">
+						<svg class="icon"><use xlink:href="#icon-dots-vertical" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Меню</span>
+					</div>
+				</div>
+			</header>
+			<div class="bord__component  bord__search">
+				<input class="bord__search-input" type="text" required>
+				<div class="bord__search-controls-list">
+					<div class="bord__search-controls-item bord__search-controls-item_submit">
+						<svg class="icon"><use xlink:href="#icon-check" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Искать</span>
+					</div>
+					<div class="bord__search-controls-item  bord__search-controls-item_clean">
+						<svg class="icon"><use xlink:href="#icon-close" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Очистить</span>
+					</div>
+				</div>
+			</div>
+			<div class="custom-scrollbar  custom-scrollbar_y  bord__cards-list">
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="bord  space__bord">
+			<header class="bord__component  bord__header">
+				<h2 class="bord__title">Приоритет 2</h2>
+				<div class="bord__controls-list">
+					<div class="bord__controls-item  bord__controls-item_add">
+						<svg class="icon"><use xlink:href="#icon-plus" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Добавить</span>
+					</div>
+					<div class="bord__controls-item  bord__controls-item_menu">
+						<svg class="icon"><use xlink:href="#icon-dots-vertical" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Меню</span>
+					</div>
+				</div>
+			</header>
+			<div class="bord__component  bord__search">
+				<input class="bord__search-input" type="text" required>
+				<div class="bord__search-controls-list">
+					<div class="bord__search-controls-item bord__search-controls-item_submit">
+						<svg class="icon"><use xlink:href="#icon-check" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Искать</span>
+					</div>
+					<div class="bord__search-controls-item  bord__search-controls-item_clean">
+						<svg class="icon"><use xlink:href="#icon-close" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Очистить</span>
+					</div>
+				</div>
+			</div>
+			<div class="custom-scrollbar  custom-scrollbar_y  bord__cards-list">
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="bord  space__bord">
+			<header class="bord__component  bord__header">
+				<h2 class="bord__title">Какой-то очень длинный заголовок который проверяет верстку на переполнение. А с ним еще один очень длинный заголовок, который помогает своему товарищу проверять верстку на переполнение.</h2>
+				<div class="bord__controls-list">
+					<div class="bord__controls-item  bord__controls-item_add">
+						<svg class="icon"><use xlink:href="#icon-plus" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Добавить</span>
+					</div>
+					<div class="bord__controls-item  bord__controls-item_menu">
+						<svg class="icon"><use xlink:href="#icon-dots-vertical" /></svg>
+						<span class="visually-hidden  bord__controls-item-text">Меню</span>
+					</div>
+				</div>
+			</header>
+			<div class="bord__component  bord__search">
+				<input class="bord__search-input" type="text" required>
+				<div class="bord__search-controls-list">
+					<div class="bord__search-controls-item bord__search-controls-item_submit">
+						<svg class="icon"><use xlink:href="#icon-check" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Искать</span>
+					</div>
+					<div class="bord__search-controls-item  bord__search-controls-item_clean">
+						<svg class="icon"><use xlink:href="#icon-close" /></svg>
+						<span class="visually-hidden  bord__search-controls-item-text">Очистить</span>
+					</div>
+				</div>
+			</div>
+			<div class="custom-scrollbar  custom-scrollbar_y  bord__cards-list">
+				<section class="card  bord__component  bord__cards-item">
+					<div class="card__section  card__main">
+						<div class="card__component  card__labels-list">
+							<div class="card__labels-item  card__labels-item_color_red"></div>
+							<div class="card__labels-item  card__labels-item_color_yellow"></div>
+							<div class="card__labels-item  card__labels-item_color_green"></div>
+						</div>
+						<h3 class="card__component  card__name">Name Name</h3>
+						<div class="card__component  card__users-list">
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+							<div class="card__users-item"></div>
+						</div>
+						<div class="card__component">
+							<div class="card__progress">
+								<div class="card__progress-line">
+									<div class="card__progress-line-complete"></div>
+								</div>
+								<span class="card__progress-score" data-alredy="1" data-total="4">/</span>
+							</div>
+						</div>
+					</div>
+					<div class="card__section">
+						<div class="card__component  card__scores-list">
+							<div class="card__scores-item  card__scores-item_comments">
+								<svg class="icon"><use xlink:href="#icon-comment" /></svg>
+								14
+							</div>
+							<div class="card__scores-item  card__scores-item_files">
+								<svg class="icon"><use xlink:href="#icon-paperclip" /></svg>
+								8 files
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
+	<link rel="stylesheet" href="css/main.min.css">
+	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<symbol id="icon-checkbox-blank-outline" viewBox="0 0 32 32">
+				<title>checkbox-blank-outline</title>
+				<path d="M25.333 4h-18.667c-1.48 0-2.667 1.187-2.667 2.667v18.667c0 1.473 1.194 2.667 2.667 2.667v0h18.667c1.473 0 2.667-1.194 2.667-2.667v0-18.667c0-1.48-1.2-2.667-2.667-2.667zM25.333 6.667v18.667h-18.667v-18.667h18.667z"></path>
+			</symbol>
+			<symbol id="icon-account" viewBox="0 0 32 32">
+				<title>account</title>
+				<path d="M16 5.333c2.946 0 5.333 2.388 5.333 5.333v0c0 2.946-2.388 5.333-5.333 5.333v0c-2.946 0-5.333-2.388-5.333-5.333v0c0-2.946 2.388-5.333 5.333-5.333v0zM16 18.667c5.893 0 10.667 2.387 10.667 5.333v2.667h-21.333v-2.667c0-2.947 4.773-5.333 10.667-5.333z"></path>
+			</symbol>
+			<symbol id="icon-account-multiple" viewBox="0 0 32 32">
+				<title>account-multiple</title>
+				<path d="M21.333 17.333c-0.387 0-0.827 0-1.293 0.067 1.547 1.12 2.627 2.6 2.627 4.6v3.333h8v-3.333c0-3.107-6.227-4.667-9.333-4.667zM10.667 17.333c-3.107 0-9.333 1.56-9.333 4.667v3.333h18.667v-3.333c0-3.107-6.227-4.667-9.333-4.667zM10.667 14.667c2.209 0 4-1.791 4-4v0c0-2.209-1.791-4-4-4v0c-2.209 0-4 1.791-4 4v0c0 2.209 1.791 4 4 4v0zM21.333 14.667c2.209 0 4-1.791 4-4v0c0-2.209-1.791-4-4-4v0c-2.209 0-4 1.791-4 4v0c0 2.209 1.791 4 4 4v0z"></path>
+			</symbol>
+			<symbol id="icon-backburger" viewBox="0 0 32 32">
+				<title>backburger</title>
+				<path d="M6.667 17.333l5.333 5.333-1.867 1.893-8.56-8.56 8.56-8.56 1.867 1.893-5.333 5.333h21.333v2.667h-21.333zM28 8v2.667h-13.333v-2.667h13.333zM28 21.333v2.667h-13.333v-2.667h13.333z"></path>
+			</symbol>
+			<symbol id="icon-bell" viewBox="0 0 32 32">
+				<title>bell</title>
+				<path d="M18.667 26.667c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0h5.333zM16 2.667c0.736 0 1.333 0.597 1.333 1.333v0 1.44c3.787 0.64 6.667 3.933 6.667 7.893v8l4 4h-24l4-4v-8c0-3.96 2.88-7.253 6.667-7.893v-1.44c0-0.736 0.597-1.333 1.333-1.333v0z"></path>
+			</symbol>
+			<symbol id="icon-check" viewBox="0 0 32 32">
+				<title>check</title>
+				<path d="M28 9.333l-16 16-7.333-7.333 1.88-1.88 5.453 5.44 14.12-14.107 1.88 1.88z"></path>
+			</symbol>
+			<symbol id="icon-checkbox-marked" viewBox="0 0 32 32">
+				<title>checkbox-marked</title>
+				<path d="M13.333 22.667l-6.667-6.667 1.88-1.893 4.787 4.787 10.12-10.12 1.88 1.893zM25.333 4h-18.667c-1.48 0-2.667 1.187-2.667 2.667v18.667c0 1.473 1.194 2.667 2.667 2.667v0h18.667c1.473 0 2.667-1.194 2.667-2.667v0-18.667c0-1.48-1.2-2.667-2.667-2.667z"></path>
+			</symbol>
+			<symbol id="icon-checkbox-marked-circle" viewBox="0 0 32 32">
+				<title>checkbox-marked-circle</title>
+				<path d="M13.333 22.667l-6.667-6.667 1.88-1.893 4.787 4.787 10.12-10.12 1.88 1.893zM16 2.667c-7.364 0-13.333 5.97-13.333 13.333v0c0 7.364 5.97 13.333 13.333 13.333v0c7.364 0 13.333-5.97 13.333-13.333v0c0-7.364-5.97-13.333-13.333-13.333v0z"></path>
+			</symbol>
+			<symbol id="icon-chevron-down" viewBox="0 0 32 32">
+				<title>chevron-down</title>
+				<path d="M9.88 11.44l6.12 6.12 6.12-6.12 1.88 1.893-8 8-8-8 1.88-1.893z"></path>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 32 32">
+				<title>close</title>
+				<path d="M25.333 8.547l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453 7.453-7.453z"></path>
+			</symbol>
+			<symbol id="icon-comment" viewBox="0 0 32 32">
+				<title>comment</title>
+				<path d="M12 29.333c-0.736 0-1.333-0.597-1.333-1.333v0-4h-5.333c-1.473 0-2.667-1.194-2.667-2.667v0-16c0-1.48 1.2-2.667 2.667-2.667h21.333c1.473 0 2.667 1.194 2.667 2.667v0 16c0 1.473-1.194 2.667-2.667 2.667v0h-8.133l-4.933 4.947c-0.267 0.253-0.6 0.387-0.933 0.387v0h-0.667z"></path>
+			</symbol>
+			<symbol id="icon-dots-vertical" viewBox="0 0 32 32">
+				<title>dots-vertical</title>
+				<path d="M16 21.333c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0c0-1.473 1.194-2.667 2.667-2.667v0zM16 13.333c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0c0-1.473 1.194-2.667 2.667-2.667v0zM16 5.333c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0c0-1.473 1.194-2.667 2.667-2.667v0z"></path>
+			</symbol>
+			<symbol id="icon-file-document" viewBox="0 0 32 32">
+				<title>file-document</title>
+				<path d="M17.333 12h7.333l-7.333-7.333v7.333zM8 2.667h10.667l8 8v16c0 1.473-1.194 2.667-2.667 2.667v0h-16c-1.48 0-2.667-1.2-2.667-2.667v-21.333c0-1.48 1.187-2.667 2.667-2.667zM20 24v-2.667h-12v2.667h12zM24 18.667v-2.667h-16v2.667h16z"></path>
+			</symbol>
+			<symbol id="icon-folder" viewBox="0 0 32 32">
+				<title>folder</title>
+				<path d="M13.333 5.333h-8c-1.48 0-2.667 1.187-2.667 2.667v16c0 1.473 1.194 2.667 2.667 2.667v0h21.333c1.473 0 2.667-1.194 2.667-2.667v0-13.333c0-1.48-1.2-2.667-2.667-2.667h-10.667l-2.667-2.667z"></path>
+			</symbol>
+			<symbol id="icon-magnify" viewBox="0 0 32 32">
+				<title>magnify</title>
+				<path d="M12.667 4c4.786 0 8.667 3.88 8.667 8.667v0c0 2.147-0.787 4.12-2.080 5.64l0.36 0.36h1.053l6.667 6.667-2 2-6.667-6.667v-1.053l-0.36-0.36c-1.52 1.293-3.493 2.080-5.64 2.080-4.786 0-8.667-3.88-8.667-8.667v0c0-4.786 3.88-8.667 8.667-8.667v0zM12.667 6.667c-3.333 0-6 2.667-6 6s2.667 6 6 6c3.333 0 6-2.667 6-6s-2.667-6-6-6z"></path>
+			</symbol>
+			<symbol id="icon-menu" viewBox="0 0 32 32">
+				<title>menu</title>
+				<path d="M4 8h24v2.667h-24v-2.667zM4 14.667h24v2.667h-24v-2.667zM4 21.333h24v2.667h-24v-2.667z"></path>
+			</symbol>
+			<symbol id="icon-paperclip" viewBox="0 0 32 32">
+				<title>paperclip</title>
+				<path d="M22 8v15.333c0 2.946-2.388 5.333-5.333 5.333v0c-2.946 0-5.333-2.388-5.333-5.333v0-16.667c0-1.841 1.492-3.333 3.333-3.333v0c1.841 0 3.333 1.492 3.333 3.333v0 14c0 0.736-0.597 1.333-1.333 1.333v0c-0.736 0-1.333-0.597-1.333-1.333v0-12.667h-2v12.667c0 1.841 1.492 3.333 3.333 3.333v0c1.841 0 3.333-1.492 3.333-3.333v0-14c0-2.946-2.388-5.333-5.333-5.333v0c-2.946 0-5.333 2.388-5.333 5.333v0 16.667c0 4.050 3.283 7.333 7.333 7.333v0c4.050 0 7.333-3.283 7.333-7.333v0-15.333h-2z"></path>
+			</symbol>
+			<symbol id="icon-plus" viewBox="0 0 32 32">
+				<title>plus</title>
+				<path d="M25.333 17.333h-8v8h-2.667v-8h-8v-2.667h8v-8h2.667v8h8v2.667z"></path>
+			</symbol>
+			<symbol id="icon-view-dashboard" viewBox="0 0 32 32">
+				<title>view-dashboard</title>
+				<path d="M17.333 4v8h10.667v-8zM17.333 28h10.667v-13.333h-10.667zM4 28h10.667v-8h-10.667zM4 17.333h10.667v-13.333h-10.667v13.333z"></path>
+			</symbol>
+		</defs>
+	</svg>
+</body>
+</html>
